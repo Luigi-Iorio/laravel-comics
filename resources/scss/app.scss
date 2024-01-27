@@ -1,0 +1,50 @@
+// importazione file scss
+@use "./partials/reset.scss" as *;
+@use "./partials/variables.scss" as *;
+@use "./partials/typography.scss" as *;
+
+// header
+header {
+    text-transform: uppercase;
+
+    nav {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $width-lg;
+        margin: 0 auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    // jumbotron
+    .jumbo {
+        height: 400px;
+        background-image: url(../img/jumbotron.jpg);
+        background-position: top;
+        background-size: cover;
+
+        .cont {
+            position: relative;
+            width: $width-lg;
+            height: 100%;
+            margin: 0 auto;
+
+            h2 {
+                padding: 15px 30px;
+                background-color: $color-banner;
+                position: absolute;
+                bottom: -30px;
+                left: 0;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
