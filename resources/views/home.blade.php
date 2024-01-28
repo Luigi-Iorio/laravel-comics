@@ -20,6 +20,20 @@
             <button>Load More</button>
             {{-- button --}}
         </ul>
+        {{-- banner --}}
+        <div class="banner">
+            <ul>
+                @foreach ($bannerList as $element)
+                    <li>
+                        <div class="image">
+                            <img src="{{ Vite::asset($element['img']) }}" alt="{{ $element['text'] }}" />
+                        </div>
+                        <p>{{ $element['text'] }}</p>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        {{-- /banner --}}
     </main>
     {{-- /main --}}
 @endsection
