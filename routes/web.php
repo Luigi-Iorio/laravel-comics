@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $headerLinks = ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"];
-    return view('home', compact("headerLinks"));
+    $data = config("comics_db");
+
+    return view('home', compact('headerLinks', 'data'));
 });
