@@ -3,7 +3,7 @@
 @section('main')
     {{-- main --}}
     <main>
-        <ul class="cont">
+        <ul class="cont comics">
             {{-- comic --}}
             @foreach ($data as $comic)
                 <li class="card">

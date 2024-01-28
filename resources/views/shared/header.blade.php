@@ -3,14 +3,14 @@
     <nav>
         {{-- logo --}}
         <div class="logo">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo dc">
+            <a href="/"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo dc"></a>
         </div>
         {{-- /logo --}}
 
         {{-- header links  --}}
         <ul>
             @foreach ($headerLinks as $link)
-                <li><a href="#">{{ $link }}</a></li>
+                <li><a href="{{ $link }}">{{ $link }}</a></li>
             @endforeach
         </ul>
         {{-- /header links --}}

@@ -1,0 +1,13 @@
+// importazione file scss
+@use "./variables.scss" as *;
+
+main {
+    .home {
+        background-color: white;
+        color: #1c1c1c;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
