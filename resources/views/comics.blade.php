@@ -7,7 +7,7 @@
             {{-- comic --}}
             @foreach ($data as $comic)
                 <li class="card">
-                    <a href="#">
+                    <a href="/comic">
                         <div class="img-cont">
                             <img src="{{ $comic['thumb'] }}" alt="title">
                         </div>

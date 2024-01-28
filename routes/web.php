@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
     $headerLinks = ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"];
     $data = config("comics_db");
 
@@ -64,5 +64,5 @@ Route::get('/', function () {
         "resources/img/footer-facebook.png", "resources/img/footer-twitter.png", "resources/img/footer-youtube.png", "resources/img/footer-pinterest.png", "resources/img/footer-periscope.png",
     ];
 
-    return view('home', compact('headerLinks', 'data', 'bannerList', 'footerLinks', 'socialIcons'));
+    return view('comics', compact('headerLinks', 'data', 'bannerList', 'footerLinks', 'socialIcons'));
 });
