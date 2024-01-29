@@ -5,7 +5,7 @@
     <main>
         <ul class="cont comics">
             {{-- comic --}}
-            @foreach ($data as $comic)
+            @foreach ($fumetti as $comic)
                 <li class="card">
                     <a href="/comic">
                         <div class="img-cont">
